@@ -1,0 +1,60 @@
+.logo {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.6rem;
+  color: var(--brand-navy);
+  text-decoration: none;
+}
+
+.mark {
+  width: 46px;
+  height: 46px;
+  flex-shrink: 0;
+}
+
+.image {
+  height: 52px;
+  width: auto;
+}
+
+.wordmark {
+  display: flex;
+  flex-direction: column;
+  line-height: 1;
+}
+
+.name {
+  font-family: var(--font-heading);
+  font-weight: 700;
+  font-size: 1.6rem;
+  letter-spacing: 0.04em;
+}
+
+.sub {
+  display: flex;
+  align-items: center;
+  gap: 0.35rem;
+  margin-top: 0.2rem;
+  font-family: var(--font-heading);
+  font-size: 0.62rem;
+  font-weight: 500;
+  letter-spacing: 0.32em;
+}
+
+.sub::before,
+.sub::after {
+  content: '';
+  width: 0.8rem;
+  height: 2px;
+  background: var(--brand-orange);
+}
+
+.light {
+  color: #fff;
+}
+
+.light .mark {
+  padding: 3px;
+  border-radius: 50%;
+  background: #fff;
+}

@@ -1,0 +1,15 @@
+.wrapper {
+  min-height: 50vh;
+  display: grid;
+  align-items: center;
+}
+
+.code {
+  margin: 0;
+  font-family: var(--font-heading);
+  font-size: clamp(5rem, 3rem + 10vw, 9rem);
+  font-weight: 700;
+  line-height: 1;
+  color: transparent;
+  -webkit-text-stroke: 3px var(--brand-orange);
+}

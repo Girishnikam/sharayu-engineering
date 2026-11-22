@@ -1,0 +1,72 @@
+.channels {
+  list-style: none;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(min(100%, 15rem), 1fr));
+  gap: 1.25rem;
+}
+
+.channel {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.5rem;
+  height: 100%;
+  padding: 2rem 1.25rem;
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius);
+  background: #fff;
+  box-shadow: var(--shadow-sm);
+  text-align: center;
+  text-decoration: none;
+  color: var(--color-text);
+  transition:
+    transform var(--transition),
+    box-shadow var(--transition),
+    border-color var(--transition);
+}
+
+.channel:hover {
+  transform: translateY(-4px);
+  border-color: rgb(242 101 5 / 40%);
+  box-shadow: var(--shadow);
+  color: var(--color-text);
+}
+
+.channelIcon {
+  display: grid;
+  place-items: center;
+  width: 60px;
+  height: 60px;
+  margin-bottom: 0.5rem;
+  border-radius: 50%;
+  color: #fff;
+  background: var(--brand-navy);
+  box-shadow: 0 0 0 6px var(--brand-orange-100);
+  flex-shrink: 0;
+}
+
+.channelTitle {
+  font-family: var(--font-heading);
+  font-size: 1.2rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  color: var(--brand-orange-600);
+}
+
+.channelValue {
+  margin-bottom: 0.5rem;
+  font-weight: 500;
+  color: var(--brand-navy);
+  overflow-wrap: anywhere;
+}
+
+.office {
+  display: flex;
+  gap: 1.25rem;
+  align-items: flex-start;
+}
+
+.address {
+  margin-bottom: 1rem;
+  color: var(--color-muted);
+}

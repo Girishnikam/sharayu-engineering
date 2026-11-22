@@ -32,4 +32,13 @@ Home (hero + stats) → About Us → Vision/Mission/Values → Services (7, each
 Our Process → Industries We Serve → Clients → Business Association → Areas We Serve → Contact.
 
 ## Tech stack
-Not decided yet — update this section once chosen (framework, hosting, build/test commands).
+Website lives in **`portfolio/`** — React 19 + React Router (declarative mode) + Vite 8, plain JavaScript,
+CSS Modules with brand tokens in `src/styles/tokens.css`, Lucide icons, self-hosted fonts via `@fontsource`
+(Oswald headings, Inter body, Dancing Script accents).
+
+- **Content:** all copy/data lives in `portfolio/src/content/*.js` (one file per page + `site.js`). Components never hardcode text.
+- **Routing/SEO:** routes are declared in `portfolio/src/routes/routeMeta.js`; every route is prerendered to static HTML
+  (`scripts/prerender.mjs`) with per-page title/description/canonical/Open Graph and JSON-LD, plus `sitemap.xml`, `robots.txt`, `404.html`.
+- **Commands** (run in `portfolio/`, Node ≥ 20.19): `npm run dev`, `npm run lint`, `npm run build`, `npm run preview`.
+- **Hosting:** GitHub Pages via `.github/workflows/deploy.yml` (base path and site URL are set from the Pages config;
+  override the domain with the `SITE_URL` repository variable).

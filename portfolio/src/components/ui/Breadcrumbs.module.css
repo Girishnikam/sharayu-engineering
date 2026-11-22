@@ -1,0 +1,33 @@
+.breadcrumbs ol {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0.375rem;
+  font-size: var(--fs-sm);
+}
+
+.breadcrumbs li {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.375rem;
+  color: var(--color-on-dark-muted);
+}
+
+.breadcrumbs a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.breadcrumbs a:hover {
+  color: var(--brand-orange);
+}
+
+.breadcrumbs [aria-current='page'] {
+  color: var(--brand-orange);
+  font-weight: 500;
+}
+
+.separator {
+  opacity: 0.6;
+}
