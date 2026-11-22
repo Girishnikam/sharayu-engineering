@@ -1,0 +1,4 @@
+- Create a scalable application 
+- Do not hardcode the things in react code and create a configurable file with each page to store the content
+- Use the best practices of the language and framework
+- Make the website SEO friendly
