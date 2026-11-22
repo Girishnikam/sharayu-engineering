@@ -1,0 +1,45 @@
+.header {
+  margin-bottom: clamp(2rem, 1.5rem + 2vw, 3rem);
+}
+
+.center {
+  text-align: center;
+}
+
+.center :global(.lead) {
+  margin-inline: auto;
+}
+
+.eyebrow {
+  margin: 0 0 0.25rem;
+  font-size: var(--fs-lg);
+}
+
+.title {
+  margin-bottom: 0.75rem;
+}
+
+.rule {
+  display: block;
+  width: 72px;
+  height: 4px;
+  margin-bottom: 1.25rem;
+  border-radius: 2px;
+  background: linear-gradient(90deg, var(--brand-navy) 0 45%, var(--brand-orange) 45% 100%);
+}
+
+.center .rule {
+  margin-inline: auto;
+}
+
+:global(.section--dark) .eyebrow {
+  color: var(--brand-orange);
+}
+
+:global(.section--dark) .rule {
+  background: linear-gradient(90deg, #fff 0 45%, var(--brand-orange) 45% 100%);
+}
+
+:global(.section--dark) :global(.lead) {
+  color: var(--color-on-dark-muted);
+}

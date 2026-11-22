@@ -1,0 +1,32 @@
+.intro {
+  max-width: 64rem;
+  margin: 0 auto clamp(2.5rem, 2rem + 2vw, 4rem);
+}
+
+.standards {
+  list-style: none;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(min(100%, 15rem), 1fr));
+  gap: 1rem;
+  margin-bottom: 3rem;
+}
+
+.standards li {
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+  padding: 1.25rem;
+  border-radius: var(--radius);
+  border-top: 4px solid var(--brand-orange);
+  background: #fff;
+  box-shadow: var(--shadow-sm);
+  font-size: var(--fs-sm);
+  color: var(--color-muted);
+}
+
+.code {
+  font-family: var(--font-heading);
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: var(--brand-navy);
+}

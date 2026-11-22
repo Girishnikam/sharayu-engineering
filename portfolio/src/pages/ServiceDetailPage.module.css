@@ -1,0 +1,34 @@
+.content {
+  min-width: 0;
+}
+
+.icon {
+  display: grid;
+  place-items: center;
+  width: 72px;
+  height: 72px;
+  margin-bottom: 1.5rem;
+  border-radius: 50%;
+  color: #fff;
+  background: var(--brand-navy);
+  box-shadow: 0 0 0 8px var(--brand-orange-100);
+}
+
+.paragraph {
+  font-size: var(--fs-md);
+}
+
+.highlights {
+  margin-bottom: 2rem;
+}
+
+@media (min-width: 640px) {
+  .highlights {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+.aside {
+  display: grid;
+  gap: 1.5rem;
+}
